@@ -14,6 +14,9 @@ app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/transactions", require("./routes/transactionRoutes"));
 app.use("/api/dashboard", require("./routes/dashboardRoutes"));
 
+app.get("/", (req, res) => {
+  res.send("API running... , All rouets are working fine");
+});
 
 app.use((req, res) => {
   res.status(404).json({ message: "Route not found" });
