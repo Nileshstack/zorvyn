@@ -15,7 +15,7 @@ app.use("/api/transactions", require("./routes/transactionRoutes"));
 app.use("/api/dashboard", require("./routes/dashboardRoutes"));
 
 app.get("/", (req, res) => {
-  res.send("API running... , All rouets are working fine");
+  res.send(" API is up and running smoothly. All routes are functioning correctly!");
 });
 
 app.use((req, res) => {
